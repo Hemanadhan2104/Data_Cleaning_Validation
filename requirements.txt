@@ -1,0 +1,9 @@
+pandas
+streamlit
+numpy
+seaborn
+matplotlib
+fuzzywuzzy
+scikit-learn
+python-Levenshtein  # Required for fuzzywuzzy
+openpyxl  # Required for reading Excel files

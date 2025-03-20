@@ -1,0 +1,16 @@
+{
+    "Hemanadhan": {
+        "selected_columns": [
+            "Name",
+            "Email",
+            "Phone Number",
+            "Address"
+        ],
+        "user_rules": {
+            "Name": "",
+            "Email": "",
+            "Phone Number": "",
+            "Address": ""
+        }
+    }
+}
