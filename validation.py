@@ -21,29 +21,9 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Constants
-# PROFILE_FILE = "user_profiles.json"
 
-# Load or create user profiles
-# def load_profiles():
-#     try:
-#         with open(PROFILE_FILE, "r") as f:
-#             return json.load(f)
-#     except FileNotFoundError:
-#         return {}
-
-# def save_profiles(profiles):
-#     with open(PROFILE_FILE, "w") as f:
-#         json.dump(profiles, f, indent=4)
-# File upload section
 st.title("📊Data Cleaning & Validation Dashboard")
-# profiles = load_profiles()
-# profile_name = st.text_input("Enter Profile Name (Optional)")
-# if profile_name and profile_name in profiles:
-#     selected_columns = profiles[profile_name]['selected_columns']
-#     user_rules = profiles[profile_name]['user_rules']
-# else:
-#     selected_columns, user_rules = [], {}
+
 file = st.file_uploader("📂 Upload a File (CSV, Excel, JSON)", type=["csv", "xlsx", "xls", "json"])
 
 if file:
@@ -193,7 +173,7 @@ if file:
     st.write("### 📑 Cleaning Report")
     for key, value in report.items():
         st.write(f"✔ {key.replace('_', ' ').capitalize()}: {value}")
-    st.write(f"📊 **Data Quality Score:** {data_quality_score:.2f}%")
+    # st.write(f"📊 **Data Quality Score:** {data_quality_score:.2f}%")
 
     # Download Cleaned Data
     cleaned_file = "cleaned_data.csv"
